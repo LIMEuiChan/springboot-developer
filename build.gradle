@@ -53,3 +53,7 @@ dependencies {
 test {
     useJUnitPlatform()  // Enable JUnit Platform to use JUnit 5 for tests
 }
+
+jar {
+    enabled = false
+}
