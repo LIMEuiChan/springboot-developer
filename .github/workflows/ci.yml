@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest #실행 환경 지정
+    runs-on: ubuntu-latest # 실행 환경 지정
     # 실행 스텝 지정
     steps:
       - uses: actions/checkout@v3
@@ -19,7 +19,7 @@ jobs:
           java-version: '17'
 
       - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+        run: chmod +x gradlew  # 수정된 부분
 
       - name: Build with Gradle
         run: ./gradlew clean build
